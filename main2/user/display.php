@@ -62,7 +62,7 @@ $total = mysqli_num_rows($data);
             <td>" . $result['username'] . "</td>
             <td>" . $result['status'] . "</td>
             <td><a class='delbtn' href='delete.php?id=$result[id]' >Delete</a> /
-            <a class='editbtn' href='edit.php?id=$result[id]&fname=$result[firstName]&lname=$result[lastName]&pnum=$result[phonenumber]&email=$result[email]&city=$result[city]&status=$result[status]&age=$result[age]&code=$result[code]'>Edit</a>
+            <a class='editbtn' href='edit_form.php?id=$result[id]&fname=$result[firstName]&lname=$result[lastName]&pnum=$result[phonenumber]&email=$result[email]&city=$result[city]&status=$result[status]&age=$result[age]&code=$result[code]'>Edit</a>
             </td>
             </tr>";
         $id++;
