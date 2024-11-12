@@ -43,7 +43,7 @@ $total = mysqli_num_rows($data);
       <th scope="col">Status</th>
       <th scope="col">Operations</th>
 
-      </tr>
+    </tr>
   </thead>
   <tbody>
     <?php
@@ -61,8 +61,8 @@ $total = mysqli_num_rows($data);
             <td>" . $result['code'] . "</td>
             <td>" . $result['username'] . "</td>
             <td>" . $result['status'] . "</td>
-            <td><a class='delbtn' href='delete.php?id=" . $result['id'] . "' >Delete</a> /
-            <a class='editbtn' href='' class='editbtn'>Edit</a>
+            <td><a class='delbtn' href='delete.php?id=$result[id]' >Delete</a> /
+            <a class='editbtn' href='edit.php?id=$result[id]&fname=$result[firstName]&lname=$result[lastName]&pnum=$result[phonenumber]&email=$result[email]&city=$result[city]&age=$result[age]&code=$result[code]&status=$result[status]' class='editbtn'>Edit</a>
             </td>
             </tr>";
         $id++;
@@ -73,7 +73,4 @@ $total = mysqli_num_rows($data);
 
     ?>
   </tbody>
-</table>  
-
-
-
+</table>
