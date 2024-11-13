@@ -2,37 +2,27 @@
 include("config.php");
 ?>
 
-
 <html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Index</title>
-
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-
-
 	<?php
 	include("header.php");
 	?>
 
-	<div class="text-center">
+	<div class="text-center"">
 		<h1>Here is the data</h1>
-	</div>
-
-
-	<div class="container mt-4">
+			<div class="container mt-4">
 		<?php include 'display.php'; ?>
+			</div>
 	</div>
-
-
-
-
 
 	<div class="section-1" style="background-image: url('images/bg1.jpg');">
 		<div class="container">
