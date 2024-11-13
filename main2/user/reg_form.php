@@ -1,6 +1,5 @@
 <title>Register</title>
 <link rel="stylesheet" href="css/style.css">
-
 <body>
 	<div class="for-center">
 		<div class="wrapper">
@@ -29,6 +28,7 @@
 						</select>
 						<input type="number" name="age" id="age" placeholder="Enter your Age">
 						<input type="number" name="code" id="code" placeholder="Enter Your Postcode">
+						<input type="file" name="pic" id="pic"><br>
 						<input type="submit" name="submit" value="Register">
 					</form>
 				</div>
