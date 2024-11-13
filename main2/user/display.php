@@ -1,23 +1,34 @@
 <style>
+	
+	td,th {
+		padding: 10px !important;
+	}
   td a.delbtn {
     color: #000;
     text-decoration: none;
-  }
+    border: 2px solid red;
+    padding: 6px;
+    background-color: tomato;
+    border-radius: 20px;
+}
 
   td a:hover.delbtn {
-    color: tomato;
+    color: #fff;
   }
 
   td a.editbtn {
     color: #000;
     text-decoration: none;
+    border: 2px solid #000;
+    padding: 6px;
+    background-color: green;
+    border-radius: 20px;
   }
 
   td a:hover.editbtn {
-    color: green;
+    color: #ffeb00;
   }
 </style>
-
 
 <?php
 include("config.php");
@@ -42,7 +53,7 @@ $total = mysqli_num_rows($data);
       <th scope="col">Username</th>
       <th scope="col">Status</th>
       <th scope="col">Operations</th>
-
+	   
     </tr>
   </thead>
   <tbody>
@@ -61,14 +72,14 @@ $total = mysqli_num_rows($data);
             <td>" . $result['code'] . "</td>
             <td>" . $result['username'] . "</td>
             <td>" . $result['status'] . "</td>
-            <td><a class='delbtn' href='delete.php?id=$result[id]' >Delete</a> /
+            <td><a class='delbtn' href='delete.php?id=$result[id]' >Delete</a>
             <a class='editbtn' href='edit_form.php?id=$result[id]&fname=$result[firstName]&lname=$result[lastName]&pnum=$result[phonenumber]&email=$result[email]&city=$result[city]&status=$result[status]&age=$result[age]&code=$result[code]'>Edit</a>
             </td>
             </tr>";
         $id++;
       }
     } else {
-      echo "<tr><td colspan='11'>No records found</td></tr>";
+      echo "<tr><td colspan='11'>No record found</td></tr>";
     }
 
     ?>
