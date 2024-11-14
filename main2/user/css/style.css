@@ -47,29 +47,37 @@ form {
 	color: #fff;
 }
 
-.reg-form
-input#fname,input#lname,
-input#email,input#password, 
-input#pnum,select#city, 
-input#age, input#code,
- select#status, input#pic {
-    width: 30%;
-    outline: none;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    margin: 10px 0px;
-    border: 2px solid transparent;
-    color: #8b758b;
-    background-color: #fff;
+.reg-form input#fname,
+input#lname,
+input#email,
+input#password,
+input#pnum,
+select#city,
+input#age,
+input#code,
+select#status,
+input#pic {
+	width: 30%;
+	outline: none;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	margin: 10px 0px;
+	border: 2px solid transparent;
+	color: #8b758b;
+	background-color: #fff;
 }
 
-.reg-form
-input#fname:hover,input#lname:hover,
-input#email:hover,input#password:hover,
-input#pnum:hover,select#city:hover,
-input#age:hover,input#code:hover,
-select#status:hover,input#pic:hover {
+.reg-form input#fname:hover,
+input#lname:hover,
+input#email:hover,
+input#password:hover,
+input#pnum:hover,
+select#city:hover,
+input#age:hover,
+input#code:hover,
+select#status:hover,
+input#pic:hover {
 	border: 2px solid #f4ff00;
 }
 
@@ -424,6 +432,7 @@ img.s7-img2 {
 
 	.s3-content-layout1 h2 {
 		margin-bottom: 300px;
+	    padding: 20px 100px 7px 50px !important;
 	}
 }
 
