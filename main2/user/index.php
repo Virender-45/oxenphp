@@ -19,7 +19,7 @@ include("config.php");
 
 	<div class="text-center"">
 		<h1>Here is the data</h1>
-			<div class="table-data">
+			<div class="table-data mt-4">
 		<?php include 'display.php'; ?>
 			</div>
 	</div>
